@@ -50,7 +50,7 @@
         </div>
         <div class="navbar-end mr-20">
            <img src="./assets/coin.png" alt="">
-            <h4 class="">5500</h4>
+            <h4 id="Current-balance" class="">5500</h4>
         </div>
       </div>
 </section>
@@ -65,8 +65,8 @@
          
         </div>
         <div class="navbar-center   lg:flex space-x-5">
-            <a class="btn bg-Primary-Btn font-extrabold">Donation</a>
-            <a class="btn font-extrabold">History</a>
+            <a id="btn-show-Donation" class="btn bg-Primary-Btn font-extrabold">Donation</a>
+            <a id="btn-show-transaction" class="btn font-extrabold">History</a>
         </div>
         <div class="navbar-end">
  
@@ -76,6 +76,8 @@
 
 
 <!-- donation box /cards  -->
+
+<section id="Donation-form">
 
 
 
@@ -91,7 +93,7 @@
         <div class="card-body">
             <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 w-1/4 ">
                 <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-                <h4 class="">38000</h4>
+                <h4 id="Noakhali-balance" class="">38000</h4>
             </div>
           
           <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -99,11 +101,11 @@
              homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br>efforts and making a positive impact on the lives of those in need.</p>
 
              <div>
-                <input type="text" placeholder="Write Donation Amount"
+                <input id="Noakhali-input-donation" type="text" placeholder="Write Donation Amount"
                 class="input input-bordered w-full my-3">
              </div>
           <div class="card-actions justify-end">
-            <button class="btn  w-full  bg-Primary-Btn font-extrabold text-black ">Donate Now</button>
+            <button id="Noakhali-Donate-btn" class="btn  w-full  bg-Primary-Btn font-extrabold text-black ">Donate Now</button>
           </div>
         </div>
       </div>
@@ -119,18 +121,18 @@
         <div class="card-body">
             <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 w-1/4 ">
                 <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-                <h4 class="">45000</h4>
+                <h4 id="Feni-balance" class="">45000</h4>
             </div>
           
           <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p> The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
 
              <div>
-                <input type="text" placeholder="Write Donation Amount"
+                <input id="Feni-input-donation" type="text" placeholder="Write Donation Amount"
                 class="input input-bordered w-full my-3">
              </div>
           <div class="card-actions justify-end">
-            <button class="btn w-full  bg-Primary-Btn font-extrabold text-black">Donate Now</button>
+            <button id="Feni-Donate-btn" class="btn w-full  bg-Primary-Btn font-extrabold text-black">Donate Now</button>
           </div>
         </div>
       </div>
@@ -146,22 +148,40 @@
     <div class="card-body">
         <div class="flex flex-row items-center bg-gray-200 rounded-lg p-2 w-1/4 ">
             <img class="w-6 h-6 mr-2" src="./assets/coin.png" alt="">
-            <h4 class="">30000</h4>
+            <h4 id="Quota-balance" class="">30000</h4>
         </div>
       
       <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
       <p> The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br>challenging time. Every donation plays a vital role in alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to support these brave individuals in their time of need.</p>
 
          <div>
-            <input type="text" placeholder="Write Donation Amount"
+            <input id="Quota-input-donation" type="text" placeholder="Write Donation Amount"
             class="input input-bordered w-full my-3">
          </div>
       <div class="card-actions justify-end">
-        <button class="btn w-full  bg-Primary-Btn font-extrabold text-black">Donate Now</button>
+        <button id="Quota-Donate-btn" class="btn w-full  bg-Primary-Btn font-extrabold text-black">Donate Now</button>
       </div>
     </div>
   </div>
 </section>
+</section>
+
+
+<!-- History part  -->
+ <section>
+           <div id="transaction-section" class="hidden"> 
+            <div class="flex justify-center">
+                <div id="transaction-container" class="text-center space-y-3 w-1/4">
+
+                </div>
+              </div>
+                
+                </div>
+ </section>
+
+<script src="./js/feature.js"></script>
+<script src="./js/utilities.js"></script>
+<script src="./js/Transaction.js"></script>
 
 </body>
 </html>
