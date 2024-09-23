@@ -38,7 +38,8 @@ function logDonation(amount,source,place)
 
   
     donationMessage.innerHTML = `
-<h2>${amount} Taka is donated for ${place} at ${source} on ${date} </h2> 
+<h2>${amount} Taka is donated for ${place} at ${source}  </h2> 
+<p class="text-gray-400">Date:${date} ${new Date()}</p>
 `;
 
     transactionContainer.appendChild(donationMessage);
