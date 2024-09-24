@@ -9,7 +9,7 @@ const donationAmountMessage= document.getElementById('donation-messageBox');
 function showModal (amount ,place){
     donationAmountMessage.innerHTML =
     `
-    <p>You have donated <span class='font-bold text-green-600'>${amount} taka</span> to <span class='font-bold'>${place} </span> succesfully</p>
+    <p>You have donated <span class='font-bold '>${amount} taka</span> to <span class='font-bold'>${place} </span> succesfully</p>
 
     `;
     modal.classList.remove('hidden');
