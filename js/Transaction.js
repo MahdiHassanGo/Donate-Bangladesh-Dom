@@ -2,22 +2,41 @@ const currentBalanceElem =document.getElementById('Current-balance');
 
 let currentBalance = parseInt(currentBalanceElem.textContent);
 
+const modal= document.getElementById('donation-modal');
+const closeModalBtn= document.getElementById('close-modal-btn');
+const donationAmountMessage= document.getElementById('donation-messageBox');
+
+function showModal (amount ,place){
+    donationAmountMessage.innerHTML =
+    `
+    <p>You have donated <span class='font-bold text-green-600'>${amount} taka</span> to <span class='font-bold'>${place} </span> succesfully</p>
+
+    `;
+    modal.classList.remove('hidden');
+}
+closeModalBtn.addEventListener('click',function(){
+    modal.classList.add('hidden');
+})
+
+
 function updateDonation(inputId,balanceId,source,place){
     const inputField = document.getElementById(inputId);
-    const amount =parseInt (inputField.value) ||0 ;
+    const amount =parseInt (inputField.value)  ;
 
     if(amount >0 && amount <= currentBalance)
     {
         currentBalance -=amount;
-        currentBalanceElem.textContent = currentBalance.toFixed(2);
+        currentBalanceElem.textContent = currentBalance.toFixed(0);
 
         const balanceElem =document.getElementById(balanceId);
         const currentBalanceValue =parseInt (balanceElem.textContent);
-        balanceElem.textContent =(currentBalanceValue +amount).toFixed(2);
+        balanceElem.textContent =(currentBalanceValue +amount).toFixed(0);
 
 
         logDonation (amount ,source ,place);
         inputField.value ='';
+
+        showModal(amount,place);
 
     }
     else{
@@ -39,7 +58,7 @@ function logDonation(amount,source,place)
   
     donationMessage.innerHTML = `
 <h2>${amount} Taka is donated for ${place} at ${source}  </h2> 
-<p class="text-gray-400">Date:${date} ${new Date()}</p>
+<p class="text-gray-400 text-xs">Date:${date}${new Date()}</p>
 `;
 
     transactionContainer.appendChild(donationMessage);
