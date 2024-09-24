@@ -33,20 +33,32 @@
       }
     }
   </script>
+  <style>
+    .active{
+      background-color: rgb(180, 244, 97);
+      color: black;
+    }
+    .inactive{
+      background-color: rgb(249, 247, 243);;
+      color: black;
+    }
+  </style>
     <title>Donate-Bangladesh</title>
 </head>
 <body class="font-lexend ">
     <!-- navbar  -->
+<section class="sticky top-0  z-50 overflow-hidden">
 
-  <div class="navbar bg-Navbar-Background pb-20 sticky top-0 z-50 transition backdrop-blur-mid flex flex-col md:flex-row items-center justify-between pb-4 px-4">
-    <div class="navbar-start flex justify-center md:justify-start w-full md:w-auto">
+
+  <div class=" navbar bg-Navbar-Background pb-20 sticky top-0 z-50 transition backdrop-blur-mid flex flex-col md:flex-row items-center justify-between pb-4 px-4">
+    <div class="navbar-start flex justify-center ">
      
-        <a href="./blog.html" class="btn bg-Primary-Btn font-extrabold md:ml-20">Blog</a>
+        <a href="./blog.html" class="btn bg-Primary-Btn font-extrabold md:mr-20">Blog</a>
       
     </div>
-    <div class="navbar-center flex items-center   lg:">
-     <img src="./assets/logo.png" alt="">
-        <h2 class="text-xl font-bold ">Donate Bangladesh</h2>
+    <div class="navbar-center  md:ml-20  lg:flex ">
+     <img  src="./assets/logo.png" alt="">
+        <h2 class="text-xl font-bold   ">Donate Bangladesh</h2>
     </div>
     <div class="navbar-end mr-20">
        <img src="./assets/coin.png" alt="">
@@ -61,21 +73,21 @@
 
 
 <section>
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-base-100 ">
         <div class="navbar-start">
          
          
         </div>
         <div class="navbar-center   lg:flex space-x-5">
-            <a id="btn-show-Donation" class="btn bg-Primary-Btn font-extrabold">Donation</a>
-            <a id="btn-show-transaction" class="btn font-extrabold">History</a>
+            <a id="btn-show-Donation" class="btn font-extrabold active">Donation</a>
+            <a id="btn-show-transaction" class="btn font-extrabold inactive">History</a>
         </div>
         <div class="navbar-end">
  
         </div>
       </div>
 </section>
-
+</section>
 
 <!-- donation box /cards  -->
 
@@ -86,7 +98,7 @@
 <section>
 
     <!-- Noakhali card  -->
-    <div class="card card-side bg-base-100 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+    <div class="card card-side bg-base-100 w-6/9 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mb-10">
         <figure class="">
           <img class="rounded-lg "
             src="./assets/noakhali.png "
@@ -114,7 +126,7 @@
 
 
       <!-- Feni Card  -->
-      <div class="card card-side bg-base-100 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+      <div class="card card-side bg-base-100 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mb-10">
         <figure>
           <img class="rounded-lg"
             src="./assets/feni.png "
@@ -141,7 +153,7 @@
 
 
 <!-- Quota Card  -->
-<div class="card card-side bg-base-100 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+<div class="card card-side bg-base-100 md:min-w-max max-w-lg rounded-lg shadow-md p-5 mx-auto flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mb-10">
     <figure>
       <img class="rounded-lg"
         src="./assets/quota-protest.png "
